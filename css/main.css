@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'Gordita';
+    src: url('/fonts/GorditaRegular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Gordita';
+    src: url('/fonts/GorditaMedium.otf') format('opentype');
+    font-weight: bold;
+}
+
+body {
+  font: 1em 'Gordita';
+  margin: 0;
+  background: #fff;
+  color: #564548;
+}
+
+a {
+  text-decoration: none;
+  color: #BE8E6B;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: normal;
+  color: #BE8E6B;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4em;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #564548;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.section {
+  width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  height: 400px;
+  background: #291C25;
+}
+
+header > .section {
+  background: url('../img/header_background.jpg') no-repeat center;
+  background-size: contain;
+  height: 100%;
+}
+
+header .gradient {
+  padding: 20px 0;
+  background: url('../img/radial_gradient_background.png') no-repeat center;
+  height: 300px;
+}
+
+header h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h1 a {
+  color: #fff;
+}
+
+#logo {
+  background: url('../img/logo.png') no-repeat;
+  background-size: 50px 88px;
+  display: block;
+  width: 50px;
+  height: 88px;
+  margin: 0 auto 20px;
+}
+
+.section {
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.appstore {
+  display: block;
+  margin: 0 auto;
+  width: 136px;
+  height: 46px;
+  background: url('../img/appstore_button.png') no-repeat;
+  background-size: contain;
+  margin-top: 40px;
+}
+
+.feature {
+  height: 300px;
+}
+
+.feature > .section {
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.feature > .section h2 {
+  margin-bottom: 15px;
+}
+
+.feature > .section h3 {
+  max-width: 700px;
+}
+
+.odd, section.odd .section {
+  background-color: #F8F6F4;
+}
+
+.screen {
+  width: 200px;
+  height: 433px;
+  display: block;
+  position: absolute;
+}
+
+.screen.recipes {
+  background: url('../img/screen_recipes.png') no-repeat;
+  background-size: contain;
+  bottom: -100px;
+  right: 0;
+}
+
+.screen.recipe {
+  background: url('../img/screen_recipe.png') no-repeat;
+  background-size: contain;
+  bottom: -100px;
+  left: 0;
+}
+
+.screen.compose {
+  background: url('../img/screen_compose.png') no-repeat;
+  background-size: contain;
+  bottom: -100px;
+  right: 0;
+}
+
+.align-right h2, .align-right h3 {
+  margin-left: 280px;
+}
+
+.grad {
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  position: absolute;
+  background-image: linear-gradient(rgba(255,255,255,0), #FFFFFF);
+}
+
+.odd .grad {
+  background-image: linear-gradient(rgba(255,255,255,0), #F8F6F4);
+}
+
+#community h2 {
+  font-size: 36px;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+#community h3 {
+  text-align: center;
+}
+
+#community li {
+  color: #BE8E6B;
+  line-height: 2em;
+}
+
+#community ul {
+  margin-left: 480px;
+  padding: 70px 0;
+}
+
+.coffee {
+  background: url("../img/community.png") no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 340px;
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+}
+
+#joinus {
+  padding: 20px 0;
+}
+
+#joinus h2 {
+  text-align: center;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+footer, footer .section {
+  background-color: #564548;
+  color: #fff;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  margin: 20px 0 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer ul li::before {
+  content: "";
+}
+
+footer a {
+  color: #fff;
+}
+
+#content .section {
+  padding: 40px 0;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .section {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px
+  }
+
+  header {
+    height: 300px;
+  }
+
+  header > .section {
+    background-size: cover;
+  }
+
+  .feature {
+    padding: 0 20px;
+  }
+
+  .feature h2 {
+    padding: 40px 0 10px;
+  }
+
+  .feature h2, .feature h3 {
+    text-align: center;
+  }
+
+  .feature h3 {
+    padding-bottom: 250px;
+  }
+
+  .feature > .section, .feature {
+    display: block;
+    height: auto;
+  }
+
+  .screen.recipes {
+    bottom: -100px;
+  }
+
+  .screen, .screen.recipe {
+    width: 150px;
+    height: 325px;
+    left: 50%;
+    margin-left: -75px;
+    bottom: -100px;
+  }
+
+  .align-right h2, .align-right h3 {
+    margin: 0;
+  }
+
+  .screen.compose {
+    bottom: -100px;
+  }
+
+  #community ul {
+    margin: 0 40px;
+    font-size: 14px;
+    padding: 0 0 20px;
+  }
+
+  .coffee {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 170px;
+    left: auto;
+    bottom: auto;
+    padding: 30px 0;
+    background-position: center;
+  }
+
+  #joinus .appstore {
+    margin-top: 20px;
+  }
+
+  #content .section {
+    padding: 40px 0;
+  }
+
+  section#content {
+    margin: 0 20px;
+  }
+
+}
