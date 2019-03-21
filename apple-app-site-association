@@ -1,0 +1,12 @@
+
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "P9Y636K3AK.app.gocoffee.gocoffee",
+                "paths": [ "/signin/*" ]
+            }
+        ]
+    }
+}
